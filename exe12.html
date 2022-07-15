@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let soTien = prompt(' so tien ban vay ngan hang (trVND) ')
+  sotien = parseFloat(soTien)*10**6
+  let Month = prompt(' so thang ban vay ngan hang ')
+  month = parseFloat(Month)
+  if ( month < 0 )
+      alert(' sai thang ')
+  else if ( month < 6 )
+      alert(' tien phai tra ' + sotien*(1 + 3.7/100 )**month + ' VND')
+  else if ( month < 12)
+      alert(' tien phai tra  ' + sotien*(1 + 5.5/100 )**month + ' VND')
+  else if (month < 18)
+      alert(' tien phai tra  ' + sotien*(1 + 6.2/100 )**month + ' VND')
+  else if ( month < 24)
+      alert(' tien phai tra  ' + sotien*(1 + 6/100 )**month- + ' VND')
+  else  alert(' tien phai tra ' + sotien*(1 + 7.0/100 )**month + ' VND')
+
+
+</script>
+
+</body>
+</html>

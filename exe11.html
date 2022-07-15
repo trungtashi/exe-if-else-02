@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let thunhap = prompt('thu nhap ca nhan cua ban la (trVND)')
+  let nguoiphuthuoc = prompt(' so nguoi phu thuoc vao ban la')
+  npt = parseFloat(nguoiphuthuoc)
+  TN = parseFloat(thunhap)
+  TNTT = (TN - 11 - 4.4*npt)*10**6
+  if (TNTT <=0)
+      alert(' khong phai nop ')
+  else if (TNTT < 5000000)
+      alert(' thue phai nop la  ' + TNTT*5/100 + '  VND')
+  else if ( TNTT < 10000000)
+      alert(' thue phai nop la  ' + TNTT*10/100 + '  VND')
+  else if  ( TNTT < 18000000)
+      alert(' thue phai nop la  ' + TNTT*15/100 + '  VND')
+  else if ( TNTT < 32000000 )
+      alert(' thue phai nop la  ' + TNTT*20/100 + '  VND')
+  else if ( TNTT < 52000000 )
+      alert(' thue phai nop la  ' + TNTT*25/100 + '  VND')
+  else if ( TNTT < 80000000)
+      alert(' thue phai nop la  ' + TNTT*30/100 + '  VND')
+  else alert(' thue phai nop la  ' + TNTT*35/100 + '  VND')
+</script>
+
+</body>
+</html>
